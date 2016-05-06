@@ -1,0 +1,28 @@
+{
+  "name": "utm-xsd-parser",
+  "version": "1.0.0",
+  "description": "UTM XSD Parser",
+  "main": "xsd-parser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pahalovo/utm-xsd-parser.git"
+  },
+  "keywords": [
+    "utm",
+    "xsd",
+    "parser"
+  ],
+  "author": "Pavel Kavetski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pahalovo/utm-xsd-parser/issues"
+  },
+  "homepage": "https://github.com/pahalovo/utm-xsd-parser#readme",
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "request": "^2.72.0"
+  }
+}
