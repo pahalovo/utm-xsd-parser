@@ -3,7 +3,9 @@ var cheerio = require("cheerio");
 var fs = require('fs');
 var path  = require('path');
 
-var url = "http://localhost:8080";
+var url = process.argv[2] || "http://localhost:8080";
+
+console.log("UTM: ", url);
 
 request(url, function (error, response, body) {
     if (!error) {
@@ -13,7 +15,7 @@ request(url, function (error, response, body) {
 
             var fileName = $(this).text();
             var loadPath = '';
-            if (loadPath == 'egaischeque.joint.2.xsd') {
+            if (fileName == 'egaischeque.joint.2.xsd') {
                 loadPath = url + '/info/xsdRetail/' + fileName
             } else {
                 loadPath = url + '/info/xsdWholesale/' + fileName
